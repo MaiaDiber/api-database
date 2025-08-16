@@ -1,4 +1,4 @@
-import { conexao } from "../conexao.js";
+import { conexao } from "./conexao.js";
 
 export async function ListarMaterialEscolar(){
     const comando = 'select * from materiaisEscolares'

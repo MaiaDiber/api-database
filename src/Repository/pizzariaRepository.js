@@ -1,4 +1,4 @@
-import { conexao } from "../conexao.js";
+import { conexao } from "./conexao.js";
 
 export async function ListarPizza() {
     const comando = 'select * from pizzaria_Benedito'

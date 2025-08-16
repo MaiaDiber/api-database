@@ -1,4 +1,4 @@
-import { conexao } from "../conexao.js";
+import { conexao } from "./conexao.js";
 
 export async function ListarCarro() {
     const comando = 'select * from Carros1'

@@ -4,7 +4,7 @@ import mysql from 'mysql2/promise'
     host: '127.0.0.1',
     user: 'root',
     password: '4321',
-    database: 'roland_garros'
+    database: 'shelby'
     //*database: maia (filmes)*/
     //*database: luu (estados)*/
     //*database: nardi (materialescolar)*/

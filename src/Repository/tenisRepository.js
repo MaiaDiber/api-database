@@ -1,4 +1,4 @@
-import { conexao } from "../conexao.js";
+import { conexao } from "./conexao.js";
 
 export async function ListarTenis() {
     const comando = 'select * from tenis'
