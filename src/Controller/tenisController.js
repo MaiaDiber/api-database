@@ -5,14 +5,14 @@ const endpointtenis = Router()
 
 endpointtenis.get('/Consultar/Tenis', async (req, resp) => {
 
-    let tenis = await tenis.ListarTenis()
-    resp.send(tenis)
+    let tenisao = await tenis.ListarTenis()
+    resp.send(tenisao)
 })
 
 endpointtenis.post('/Inserir/Tenis', async (req, resp) => {
-    let tenis = req.body
+    let tenisao = req.body
 
-    let id = await tenis.InserirTenis(tenis)
+    let id = await tenis.InserirTenis(tenisao)
     resp.send({
         novoID: id
     })

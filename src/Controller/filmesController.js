@@ -4,14 +4,14 @@ import { Router } from "express"
 const endpointfilme = Router()
 
 endpointfilme.get('/Consultar/Filmes', async (req, resp) => {
-    let filmes = await filmes.ListarFilmes()
-    resp.send(filmes)
+    let filme = await filmes.ListarFilmes()
+    resp.send(filme)
 })
 
 endpointfilme.post('/Inserir/Filmes', async (req, resp) => {
-    let filmes = req.body
+    let filme = req.body
 
-    let id = await filmes.InserirFilmes(filmes)
+    let id = await filmes.InserirFilmes(filme)
     resp.send({
         novoID: id
     })
